@@ -1,0 +1,29 @@
+div.container {
+    display: grid;
+    grid-template-columns: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+h2, p {
+    text-align: center;
+}
+
+div.buttons {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+button {
+    background-color: blue;
+    height: 30px;
+    border-radius: 5px;
+    border: none;
+}
+
+a {
+    color: blueviolet;
+    text-decoration: none;
+}

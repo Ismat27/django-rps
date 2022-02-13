@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+{% block content %} 
+<div class="container">
+    <div class="text">
+        <h2>ROCK, PAPER, SCISSORS</h2>
+    </div>
+    {% if decision %}
+    <div class="info">
+        <p class="computer">{{ computer_choice }}</p>
+        <p class="user">{{ user_choice }}</p>
+        <p>{{ decision }}</p>
+    </div>
+    {% endif %}
+    <div class="buttons">
+        <button><a href="{% url 'rps:game' %}?choice=rock">ROCK</a></button>
+        <button><a href="{% url 'rps:game' %}?choice=paper">PAPER</a></button>
+        <button><a href="{% url 'rps:game' %}?choice=scissors">SCISSORS</a></button>
+    </div>
+</div>
+{% endblock %}
